@@ -8,10 +8,10 @@ I do not claim any ownership on the HotKnots original source code, neither on th
 
 Work from this repository is used in [knotify](https://github.com/ntua-dslab/knotify.git).
 
-## Usage
+## Build
 
 ```bash
-(cd hotknots/simfold && make -j)
 (cd hotknots/LE && make -j)
-./example.py
 ```
+
+For usage, you need `./hotknots/LE/libpkenergy.so`, `./hotknots/params` and `example.py`.
