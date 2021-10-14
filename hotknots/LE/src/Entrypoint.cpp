@@ -62,6 +62,10 @@ double get_energy(char *sequence, char *structure) {
       };
     };
   }
-  return (-L->EnergyViaSimfold(DP) - L->EnergyDanglingViaSimfold(DP)) / 1000;
+  double result =
+      (-L->EnergyViaSimfold(DP) - L->EnergyDanglingViaSimfold(DP)) / 1000;
+
+  delete R, s, B, L;
+  return result;
 }
 }
